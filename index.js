@@ -135,7 +135,7 @@ app.intent("howManyEpisodesIntent",
 );
 
 function respondSeriesNotFound(series){
-	response.say('Sorry, I didn\'t found ' + seriesName + ' series');
+	response.say('Sorry, I didn\'t found ' + series + ' series');
 	response.send();
 	response.shouldEndSession(true);
 }
