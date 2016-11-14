@@ -1,2 +1,2 @@
-# alexa-tvseries
-Small Alexa skill for asking info about TV series.
+# emilio-axa-test
+Alexa test
