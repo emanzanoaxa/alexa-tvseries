@@ -44,8 +44,8 @@ app.intent("nextEpisodeIntent",
 						} else {
 							text = show.name + ' last episode is ' + last.name + ', but I don\'t know when is emitted';
 						}
-						var card = createCard(text, show.image.medium, show.image.original);
-						response.card(card);
+						//var card = createCard(text, show.image.medium, show.image.original);
+						//response.card(card);
 						response.say(text);
 						response.send();
 						response.shouldEndSession(true);
@@ -80,8 +80,8 @@ app.intent("howManySeasonsIntent",
 					tvmaze.showById(showId, "seasons", false, function(err1, res1) {
 						var seasons = JSON.parse(res1);
 						var text = show.name + ' has ' + seasons.length + ' seasons';
-						var card = createCard(text, show.image.medium, show.image.original);
-						response.card(card);
+						//var card = createCard(text, show.image.medium, show.image.original);
+						//response.card(card);
 						response.say(text);
 						response.send();
 						response.shouldEndSession(true);
@@ -116,8 +116,8 @@ app.intent("howManyEpisodesIntent",
 					tvmaze.showById(showId, "episodes", "specials", function(err1, res1) {
 						var episodes = JSON.parse(res1);
 						var text = show.name + ' has ' + episodes.length + ' episodes';
-						var card = createCard(text, show.image.medium, show.image.original);
-						response.card(card);
+						//var card = createCard(text, show.image.medium, show.image.original);
+						//response.card(card);
 						response.say(text);
 						response.send();
 						response.shouldEndSession(true);
